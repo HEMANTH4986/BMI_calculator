@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/S%20HEMANTH/OneDrive/Desktop/bmi/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div class="main-layout">
+
+    <!-- Photo at the top -->
+    <div class="image-section">
+        <img src="./BMI Calculator_files/Himg.jpeg" alt="My Photo">
+    </div>
+
+    <!-- BMI Calculator below the photo -->
+    <div class="container">
+
+        <!-- Keep all your existing BMI calculator HTML here -->
+
+    </div>
+
+</div>
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="./BMI Calculator_files/style.css">
+
+
+
+
+<main class="container">
+
+    <header class="header">
+        <button id="theme-toggle">🌙</button>
+
+        <h1>BMI Calculator</h1>
+        <p>Check your Body Mass Index in seconds.</p>
+    </header>
+
+    <!-- BMI Calculator -->
+
+    <section class="card">
+
+        <div class="unit-toggle">
+            <button class="unit-btn active" data-unit="metric">
+                Metric
+            </button>
+
+            <button class="unit-btn" data-unit="imperial">
+                Imperial
+            </button>
+        </div>
+
+        <form id="bmi-form">
+
+            <div id="metric-fields">
+
+                <label>Height (cm)</label>
+                <input type="number" id="height-cm" placeholder="Enter height">
+
+                <label>Weight (kg)</label>
+                <input type="number" id="weight-kg" placeholder="Enter weight">
+
+            </div>
+
+            <div id="imperial-fields" class="hidden">
+
+                <label>Height (feet)</label>
+                <input type="number" id="height-ft" placeholder="Feet">
+
+                <label>Height (inches)</label>
+                <input type="number" id="height-in" placeholder="Inches">
+
+                <label>Weight (lb)</label>
+                <input type="number" id="weight-lb" placeholder="Weight">
+
+            </div>
+
+            <p id="error"></p>
+
+            <button type="submit" class="calculate">
+                Calculate BMI
+            </button>
+
+            <button type="reset" class="reset">
+                Reset
+            </button>
+
+        </form>
+
+        <!-- Result -->
+
+        <div id="result" class="hidden">
+
+            <h2>Your BMI</h2>
+
+            <h1 id="bmi-value">0.0</h1>
+
+            <h3 id="bmi-category"></h3>
+
+            <p id="bmi-message"></p>
+
+            <p id="healthy-range"></p>
+
+        </div>
+
+    </section>
+
+    <!-- BMI Categories -->
+
+    <section class="card">
+
+        <h2>BMI Categories</h2>
+
+        <p>BMI is a general screening tool and does not account for muscle mass, age, sex or body composition. It is not a medical diagnosis. Consult a healthcare professional for 		personal advice</p><table>
+
+            <tbody><tr>
+                <th>Category</th>
+                <th>BMI Range</th>
+            </tr>
+
+            <tr>
+                <td>Underweight</td>
+                <td>Below 18.5</td>
+            </tr>
+
+            <tr>
+                <td>Normal weight</td>
+                <td>18.5 – 24.9</td>
+            </tr>
+
+            <tr>
+                <td>Overweight</td>
+                <td>25 – 29.9</td>
+            </tr>
+
+            <tr>
+                <td>Obese</td>
+                <td>30 and above</td>
+            </tr>
+		
+
+        </tbody></table>
+
+    </section>
+
+    <!-- Unit Converter -->
+
+    <section class="card">
+
+        <h1>Unit Converter</h1>
+
+        <h3>Height</h3>
+	<h4>CM</h4>
+	<input type="number" id="c-cm" placeholder="Centimeters">
+	<h4>feet</h4>
+        <input type="number" id="c-ft" placeholder="Feet">
+	<h4>inches</h4>
+        <input type="number" id="c-in" placeholder="Inches">
+
+        <h3>Weight</h3>
+
+        <input type="number" id="c-kg" placeholder="Kilograms">
+        <input type="number" id="c-lb" placeholder="Pounds">
+
+    </section>
+
+    <!-- History -->
+
+    <section class="card">
+
+        <h2>Recent Results</h2>
+
+        <button id="clear-history">Clear History</button>
+
+        <ul id="history-list"><li>23.3 - Normal weight (24/11/2026, 7:01:43 pm)</li><li>27.9 - Overweight (24/11/2026, 2:23:14 pm)</li><li>28.1 - Overweight (24/11/2026, 2:22:24 pm)</li><li>23.3 - Normal weight (24/11/2026, 2:19:27 pm)</li></ul>
+
+        <p id="history-empty" class="hidden">
+            No results yet.
+        </p>
+
+    </section>
+
+    <!-- Healthy Habits -->
+
+    <section class="card">
+
+        
+	<div class="healthy-habits">
+
+    <h2>Healthy Habits</h2>
+
+    <div class="habit">
+        <h3>
+            <img src="./BMI Calculator_files/img1.png" alt="Food" class="habit-icon">
+            Eat balanced meals
+        </h3>
+        <p>Include vegetables, fruit, whole grains and protein.</p>
+    </div>
+
+    <div class="habit">
+        <h3>
+            <img src="./BMI Calculator_files/img2.png" alt="Exercise" class="habit-icon">
+            Stay physically active
+        </h3>
+        <p>Aim for around 150 minutes of moderate activity a week.</p>
+    </div>
+
+    <div class="habit">
+        <h3>
+            <img src="./BMI Calculator_files/img3.png" alt="Sleep" class="habit-icon">
+            Sleep well
+        </h3>
+        <p>Most adults do best with 7–9 hours of sleep each night.</p>
+    </div>
+
+    <div class="habit">
+        <h3>
+            <img src="./BMI Calculator_files/img4.png" alt="Water" class="habit-icon">
+            Drink enough water
+        </h3>
+        <p>Regular hydration supports energy and overall health.</p>
+    </div>
+
+</div>
+
+            </section>
+
+    <footer>
+        Built by S.Hemanth
+    </footer>
+
+</main>
+
+<script src="./BMI Calculator_files/script.js"></script>
+
+
+
+</body></html>
